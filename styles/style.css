@@ -1,0 +1,75 @@
+body {
+    font-family: "CustomFont";
+    src: url(/fonts/Helvetica-Bold.otf);
+    src: url(/fonts/Helvetica.otf);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    height: 340px;
+    padding: 20px 40px;
+    box-shadow: 2px 2px 10px 2px rgb(140, 165, 159);
+    margin-top: 40px;
+}
+
+.container .heading {
+    font-family: Helvetica;
+    font-weight: 900;
+    color: #33475b;
+    font-size: 32px;
+}
+
+.container .description {
+    font-size: 14px;
+    text-align: justify;
+    color: #33475b;
+}
+
+.input-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email label {
+    font-weight: 350;
+}
+
+.input-email .email-box {
+    width: 680px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 0 15px;
+    margin-top: 5px;
+}
+
+.input-email .btn-submit {
+    height: 40px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        height: 100%;
+        width: 80%;
+        margin: auto;
+    }
+
+    .input-email .email-box {
+        width: 80%;
+    }
+
+    .container .description {
+        width: 100%;
+    }
+}
